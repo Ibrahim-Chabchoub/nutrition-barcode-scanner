@@ -1,10 +1,8 @@
 import cv2 as cv
 from pyzbar.pyzbar import decode
 import requests
-#image = cv.imread(r"C:\Users\ibrah\OneDrive\Desktop\barhoum\Python CS50\swdxcgfhbjknlk.PNG")
 camera = cv.VideoCapture(0)
 code = None
-#barcodes = decode(image)
 while True:
     success, frame = camera.read()
     cv.imshow("scanner", frame)
